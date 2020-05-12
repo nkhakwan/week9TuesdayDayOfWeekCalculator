@@ -7,11 +7,11 @@ namespace DayOfTheWeekCalculator
 
     int Month {get; set;}
 
-    public WeekDay (int date, int year, int month)
+    public WeekDay (int date,  int month, int year,)
     {
       Date = date;
-      Year = year;
       Month = month;
+      Year = year;
     }
 
     
