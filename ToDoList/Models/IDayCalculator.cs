@@ -2,10 +2,10 @@ namespace DayOfTheWeekCalculator
 {
   interface IDayCalculator
   {
-    string FirstDayOfTheYearCalculator();
+    //string FirstDayOfTheYearCalculator();
     int NumberOfDays();
 
-    string DayFinder();
+    //string DayFinder();
 
 
   }

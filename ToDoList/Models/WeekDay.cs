@@ -16,11 +16,9 @@ namespace DayOfTheWeekCalculator
 
     
 
-    string FirstDayOfTheYearCalculator()
-    {
-
-
-    }
+    //string FirstDayOfTheYearCalculator()
+   // {
+    //}
     int NumberOfDays()
     {
       int[] Months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -44,11 +42,9 @@ namespace DayOfTheWeekCalculator
       return TotalDays;
     }
 
-    string DayFinder()
-    {
-
-
-    }
+    //string DayFinder()
+    //{
+    //}
 
 
   }
