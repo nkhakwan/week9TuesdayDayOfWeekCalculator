@@ -8,18 +8,19 @@ namespace DayOfTheWeekCalculator
   {
     public static void Main()
     {
-      Console.WriteLine("Please enter Day");
-      string MyDay = Console.ReadLine();
-      int MyIntDay = int.Parse(MyDay);
-      Console.WriteLine("Please enter month");
-      string MyMonth = Console.ReadLine();
-      int MyIntMonth = int.Parse(MyMonth);
-      Console.WriteLine("Please enter Year");
-      string MyYear = Console.ReadLine();
-      int MyIntYear = int.Parse(MyYear);
-      WeekDay MyWeekDay = new WeekDay (MyIntDay, MyIntMonth, MyIntYear);
+      Console.WriteLine("Please enter Date, month, year separated by a comma");
+      string MyInput = Console.ReadLine();
+      string[] MyDate = MyInput.Split(',');
+      WeekDay MyWeekDay = new WeekDay (int.Parse(MyDate[0]), int.Parse(MyDate[1]), int.Parse(MyDate[2]));
       Console.WriteLine($"here are the number of days {MyWeekDay.NumberOfDays()}");
 
+      List<string> myString = new List<string>();
+      for (int i = 0; i<MyDate.Length; i=i+1)
+      {
+        myString[i] = MyDate[i];
+        Console.WriteLine($"Here is the list items{myString[i]} ");
+      }
+      
 
 
     }
