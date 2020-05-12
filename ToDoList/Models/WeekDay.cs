@@ -7,7 +7,7 @@ namespace DayOfTheWeekCalculator
 
     int Month {get; set;}
 
-    public WeekDay (int date,  int month, int year,)
+    public WeekDay (int date,  int month, int year)
     {
       Date = date;
       Month = month;
@@ -19,7 +19,7 @@ namespace DayOfTheWeekCalculator
     //string FirstDayOfTheYearCalculator()
    // {
     //}
-    int NumberOfDays()
+    public int NumberOfDays()
     {
       int[] Months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
       int TotalDays = 0;

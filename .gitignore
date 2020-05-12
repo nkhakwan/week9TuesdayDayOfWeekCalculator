@@ -1,6 +1,7 @@
 # Compiled source #
 ###################
 obj/
+GarbageCollector.cs
 bin/
 *.com
 *.class
